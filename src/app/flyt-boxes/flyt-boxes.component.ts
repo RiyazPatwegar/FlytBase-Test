@@ -5,7 +5,8 @@ export enum KEY_CODE {
   DOWN_ARROW = 40,
   RIGHT_ARROW = 39,
   UP_ARROW = 38,
-  LEFT_ARROW = 37
+  LEFT_ARROW = 37,
+  DELETE_KEY = 46
 }
 
 // global variables
@@ -83,7 +84,7 @@ export class FlytBoxesComponent implements OnInit {
     }
 
     /* return if no rectangle selected */
-    if(selectedRectangle == ''){
+    if(selectedRectangle == '' || !(document.getElementById(selectedRectangle))){
       return false;
     }
 
@@ -127,6 +128,11 @@ export class FlytBoxesComponent implements OnInit {
         let px = newMarginTop+'px';
         document.getElementById(selectedRectangle).style.marginTop = px;
       }
+    }
+
+    if(event.keyCode === KEY_CODE.DELETE_KEY) {
+      console.log('delet div');
+      document.getElementById(selectedRectangle).remove();
     }
   }
 
