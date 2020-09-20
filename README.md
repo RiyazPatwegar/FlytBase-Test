@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-- Copy / Colne repository to any folder in drive
+- Copy / Clone repository to any folder in drive
 - Run `npm install` to get basic dependencey files for application (node_modules)
 - Run `ng serve` for a dev server. Navigate to `http://localhost:4200/` and observe the output. The app will automatically reload if you change any of the source files.
 
