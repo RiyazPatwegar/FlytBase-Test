@@ -130,6 +130,7 @@ export class FlytBoxesComponent implements OnInit {
       }
     }
 
+    /* delete selected rectangle */
     if(event.keyCode === KEY_CODE.DELETE_KEY) {
       console.log('delet div');
       document.getElementById(selectedRectangle).remove();
