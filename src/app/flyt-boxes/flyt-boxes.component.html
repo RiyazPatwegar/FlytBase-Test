@@ -1,0 +1,16 @@
+<main role="main" class="container">
+  <div class="row">
+    <button class="btn btn-warning" (click)="drawBox()"> Create Box</button>
+    &nbsp;
+    <div class="keyboardLabel">
+      <label for="">Use Keyboard :</label>      
+    </div>
+    <label class="switch">
+      <input type="checkbox" [checked]="this.checked" (click)="controlKeyboard()">
+      <span class="slider round"></span>
+    </label>
+  </div>
+ 
+  <div class="drawArea" #drawArea>
+  </div>
+</main>
